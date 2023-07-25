@@ -4,10 +4,8 @@ var _app = require('./app'); var _app2 = _interopRequireDefault(_app);
 const whiteList = [
   "https://samuraiwars.online",
   "https://api.samuraiwars.online",
-  "http://localhost:3000",
-  "http://localhost:3001",
   "http://localhost:4001",
-  "http://localhost:4000",
+
 ];
 
 const serv = new (0, _socketio.Server)('', {

@@ -23,10 +23,8 @@ var _market = require('./routes/market'); var _market2 = _interopRequireDefault(
 const whiteList = [
   "https://samuraiwars.online",
   "https://api.samuraiwars.online",
-  "http://localhost:3000",
-  "http://localhost:3001",
   "http://localhost:4001",
-  "http://localhost:4000",
+  "http://localhost:3000",
 ];
 
 const corsOptions = {
