@@ -14,7 +14,7 @@ module.exports = {
         onDelete: 'CASCADE',
         onUpdate: 'CASCADE',
       },
-      item_id: {
+      inventario_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
         primaryKey: true,
