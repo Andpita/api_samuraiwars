@@ -28,6 +28,7 @@ const whiteList = [
   "http://localhost:3000",
 ];
 
+// eslint-disable-next-line no-unused-vars
 const corsOptions = {
   origin: (origin, callback) => {
     if (whiteList.indexOf(origin) !== -1 || !origin) {
@@ -46,7 +47,7 @@ class App {
   }
 
   middlewares() {
-    this.app.use(cors(corsOptions));
+    this.app.use(cors());
     this.app.use(helmet());
     this.app.use(delay(100));
     this.app.use(express.urlencoded({ extended: true }));

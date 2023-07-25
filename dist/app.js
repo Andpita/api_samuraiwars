@@ -22,11 +22,13 @@ var _market = require('./routes/market'); var _market2 = _interopRequireDefault(
 
 const whiteList = [
   "https://samuraiwars.online",
+  "https://samuraiwars.online/*",
   "https://api.samuraiwars.online",
   "http://localhost:4001",
   "http://localhost:3000",
 ];
 
+// eslint-disable-next-line no-unused-vars
 const corsOptions = {
   origin: (origin, callback) => {
     if (whiteList.indexOf(origin) !== -1 || !origin) {
@@ -45,7 +47,7 @@ class App {
   }
 
   middlewares() {
-    this.app.use(_cors2.default.call(void 0, corsOptions));
+    this.app.use(_cors2.default.call(void 0, ));
     this.app.use(_helmet2.default.call(void 0, ));
     this.app.use(_expressdelay2.default.call(void 0, 100));
     this.app.use(_express2.default.urlencoded({ extended: true }));

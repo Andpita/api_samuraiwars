@@ -3,5 +3,5 @@
 const port = process.env.APP_PORT;
 _app2.default.listen(port, () => {
   console.log(`Acessar http://localhost:${port}`);
-  console.log('Servidor executando na porta 3001');
+  console.log('Servidor executando na porta 4001');
 });
