@@ -22,6 +22,7 @@ import market from './routes/market';
 
 const whiteList = [
   "https://samuraiwars.online",
+  "https://samuraiwars.online/*",
   "https://api.samuraiwars.online",
   "http://localhost:4001",
   "http://localhost:3000",
